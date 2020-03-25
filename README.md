@@ -1,2 +1,3 @@
-# be-the-hero
+# BE-THE-HERO
+
 Application in Semana OminStack 11
