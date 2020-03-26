@@ -31,7 +31,7 @@ export default function NewIncident() {
           Authorization: ongId,
         }
       });
-      
+
       history.push('/profile');
 
     } catch (err) {
@@ -56,17 +56,20 @@ export default function NewIncident() {
 
         <form onSubmit={handleNewIncident} >
           <input
+            required
             placeholder="Título do caso"
             value={title}
             onChange={e => setTitle(e.target.value)}
           />
           <textarea
+            required
             placeholder="Descrição"
             value={description}
             onChange={e => setDescription(e.target.value)}
           />
 
           <input
+            type="number"
             placeholder="Valor em reais"
             value={value}
             onChange={e => setValue(e.target.value)}

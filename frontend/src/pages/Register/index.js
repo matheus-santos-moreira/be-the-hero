@@ -36,7 +36,7 @@ export default function Register() {
       history.push('/');
     } catch (err) {
       alert('Erro no cadastro, tente novamente.');
-     }
+    }
 
   }
 
@@ -57,17 +57,20 @@ export default function Register() {
 
         <form onSubmit={handleRegister} >
           <input
+            required
             placeholder="Nome da ONG"
             value={name}
             onChange={e => setName(e.target.value)}
           />
           <input
+            required
             type="email"
             placeholder="E-mail"
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
           <input
+            required
             placeholder="Whatsapp"
             value={whatsapp}
             onChange={e => setWhatsapp(e.target.value)}
@@ -75,11 +78,13 @@ export default function Register() {
 
           <div className="input-group">
             <input
+              required
               placeholder="Cidade"
               value={city}
               onChange={e => setCity(e.target.value)}
             />
             <input
+              required
               placeholder="UF"
               style={{ width: 80 }}
               value={uf}
