@@ -1,3 +1,3 @@
 # BE-THE-HERO
 
-Application in Semana OminStack 11
+Aplicação desenvolvida durante a semana OmniStack 11.0
